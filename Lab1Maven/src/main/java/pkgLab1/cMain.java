@@ -32,13 +32,18 @@ public class cMain {
 		double pv = Retirement.FindPV(intRateWhileRetired/12, yearsRetired*12, Math.abs(RequiredIncome-MonthlySSI) * -1, 0, false);
 		
 		double pmt = Retirement.FindPMT(intRateWhileWorking /12, yearsToWork*12, 0, pv, false);
-		
-		System.out.println(pmt);
+	
+		System.out.println (Math.abs(pmt));
 		
 		
 		
 		
 
+	}
+
+	private static char[] abs(double pmt) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
